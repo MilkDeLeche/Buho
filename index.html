@@ -73,10 +73,25 @@
     <link rel="stylesheet" href="css/custom-css.min.css" type="text/css" media="all" />
 
     <style>
-        /* Show white logo on desktop only */
+        /* Custom Font for Búho */
+        @font-face {
+            font-family: 'Fonseca-ExtraBold';
+            src: url('source/Fonseca-ExtraBold.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        /* Apply custom font to Búho headings */
+        .elementor-heading-title.buho-custom-font {
+            font-family: 'Fonseca-ExtraBold', sans-serif !important;
+            font-weight: normal !important;
+            letter-spacing: 0.2em !important;
+        }
+        
+        /* Show logo on desktop */
         @media (min-width: 1024px) {
             .header-logo {
-                content: url('source/buhowhite.png');
+                content: url('source/logo.png');
             }
         }
     </style>
@@ -448,7 +463,7 @@
                                                                     data-widget_type="heading.default"
                                                                 >
                                                                     <div class="elementor-widget-container">
-                                                                        <h1 class="elementor-heading-title elementor-size-default">Búho</h1>
+                                                                        <h1 class="elementor-heading-title elementor-size-default buho-custom-font">Búho</h1>
                                                                     </div>
                                                                 </div>
                                                                 <div
